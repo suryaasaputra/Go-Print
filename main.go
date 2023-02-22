@@ -93,6 +93,7 @@ func routeIndexGet(c *gin.Context) {
 }
 
 func printWithDefaulPrinter(file string) error {
+	fmt.Println("=====================================")
 	printerName, _ := goprint.GetDefaultPrinterName()
 	fmt.Println("Default printer name: ", printerName)
 
